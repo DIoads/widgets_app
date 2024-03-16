@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-const List<Color> _colorTheme = [
+const List<Color> _colorList = [
   Colors.red,
   Colors.orange,
   Colors.white,
@@ -15,15 +15,16 @@ const List<Color> _colorTheme = [
 ];
 
 class Apptheme {
-  final int selectColor;
+  final int _selectedColor;
 
-  Apptheme({required this.selectColor})
-      : assert(selectColor >= 0 && selectColor < _colorTheme.length,
-            'Elegir un valor entre el rango 0 y ${_colorTheme.length - 1}');
+  Apptheme({required int selectColor})
+      : _selectedColor = selectColor,
+        assert(selectColor >= 0 && selectColor < _colorList.length,
+            'Elegir un valor entre el rango 0 y ${_colorList.length - 1}');
 
   ThemeData getTheme() => ThemeData(
       useMaterial3: true,
-      colorSchemeSeed: _colorTheme[selectColor],
+      colorSchemeSeed: _colorList[_selectedColor],
       brightness: Brightness.light,
       appBarTheme: const AppBarTheme(centerTitle: true));
 }

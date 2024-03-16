@@ -8,7 +8,6 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("titulo del menu"),
-        leading: const Text("centro"),
       ),
     );
   }
