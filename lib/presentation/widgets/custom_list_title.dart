@@ -17,7 +17,7 @@ class CustomListTitle extends StatelessWidget {
       subtitle: Text(item.subtitle),
       onTap: () {
         //print('Llamado de la liga a donde ir ${item.link}');
-        context.pushNamed(item.nameScreen);
+        context.push(item.link);
       },
     );
   }

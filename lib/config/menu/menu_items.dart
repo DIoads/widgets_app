@@ -29,9 +29,9 @@ const appMenuItems = <MenuItem>[
       nameScreen: 'CardScreen',
       icon: Icons.credit_card),
   MenuItem(
-      title: 'Progress indicators',
+      title: 'Indicadores de progreso',
       subtitle: 'Generales y controlados',
-      link: '/indicators',
+      link: '/progress',
       nameScreen: 'ProgressScreen',
       icon: Icons.refresh),
   MenuItem(
@@ -41,33 +41,33 @@ const appMenuItems = <MenuItem>[
       nameScreen: 'SnackBarScreen',
       icon: Icons.error_outline),
   MenuItem(
-      title: 'Snackbar y dialogos',
-      subtitle: 'Indicadores en pantalla',
-      link: '/dialogs',
-      nameScreen: 'DialogScreen',
+      title: 'Animaciones',
+      subtitle: 'Animaciones',
+      link: '/animated',
+      nameScreen: 'AnimatedScreen',
       icon: Icons.crop_din),
   MenuItem(
-      title: 'UI Controls + Tiles',
+      title: 'Controles UI',
       subtitle: 'Una serie de controladores de Flutter',
-      link: '/controllers',
-      nameScreen: 'ControllerScreen',
+      link: '/uicontrols',
+      nameScreen: 'UIControllerScreen',
       icon: Icons.car_rental),
   MenuItem(
-      title: 'Introduccion a la aplicacion',
+      title: 'Introducción a la aplicación',
       subtitle: 'Pequeño tutorial introductorio',
       link: '/tutorial',
       nameScreen: 'TutorialScreen',
       icon: Icons.accessible),
   MenuItem(
-      title: 'Infinite scroll y Pull',
-      subtitle: 'Listas infinitas y pull to refresh',
-      link: '/lists',
-      nameScreen: 'ListScreen',
+      title: 'Scroll infinito y Pull',
+      subtitle: 'Listas infinitas y Pull para actualizar',
+      link: '/infinite',
+      nameScreen: 'InfiniteScrollScreen',
       icon: Icons.list),
   MenuItem(
       title: 'Cambiar tema',
       subtitle: 'Cambiar tema de la aplicacion',
       link: '/theme',
-      nameScreen: 'ThemeScreen',
+      nameScreen: 'ThemeChangerScreen',
       icon: Icons.palette)
 ];
